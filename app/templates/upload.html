@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>SplitTheBill</title>
+</head>
+<body>
+    {%if error%}
+    <p>Try Again</p>
+    {%else%}
+    <h1>You owe:</h1>
+    <p>{{result}}</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}" class="btn btn-custom">Go Back to Home</a>
+</body>
+</html>

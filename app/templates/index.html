@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>SplitTheBill</title>
+</head>
+<body>
+    <h1>Split the bill</h1>
+    <h3>How it works</h3>
+    <p>you should input all the fields below to complete your calculations</p>
+
+    <form id="uploadForm" action="./upload" method="post" class="center-form">
+        <label for="total">Total bill amount: </label> 
+        <input type="number" id="total" name="total" required>
+        <br><br>
+        <label for="share">Your share: </label> 
+        <input type="number" id="share" name="share" required>
+        <br><br>
+        <label for="bank">Bank recipt amount: </label> 
+        <input type="number" id="bank" name="bank" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    
+</body>
+</html>
